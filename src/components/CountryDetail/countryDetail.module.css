@@ -1,0 +1,17 @@
+.sousNav {
+    box-shadow:rgba(34, 117, 136, 0.12) 0px -12px 30px,  
+    rgba(0, 0, 0, 0.17) 0px 12px 13px; 
+    margin: 0;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sousNav li {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #4C91A1;
+    padding: 0 30px;
+
+}
