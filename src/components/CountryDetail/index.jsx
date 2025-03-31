@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from './CountryDetail.module.css'
+import styles from './countryDetail.module.css'
 import {getImageUrl} from "../../utils/function.js"
 import { ArrowFatLinesUp} from "@phosphor-icons/react";
 
