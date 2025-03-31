@@ -1,7 +1,110 @@
-.sousNav {
-    box-shadow:rgba(34, 117, 136, 0.12) 0px -12px 30px,  
+.goBackContainer {
+    margin: 2px 200px;
+}
+
+.goBackbtn {
+    background-color: #4C91A1;
+    color: white;
+    cursor: pointer;
+}
+
+.displayCountry {
+    margin: 5px 100px;
+}
+
+.displayCountry h2 {
+    margin: 0;
+    padding: 0;
+}
+.displayCities {
+    box-shadow:rgba(21, 37, 41, 0.12) 0px -12px 30px,  
     rgba(0, 0, 0, 0.17) 0px 12px 13px; 
     margin: 0;
+    background-color: #a8c6cd;
+    margin: 10px 100px;
+}
+
+.detail {
+    display: flex;
+    margin: 10px;
+    border: 1px solid rgba(54, 75, 115, 0.155);
+  
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageContainer h2 {
+    margin: 0;
+    padding: 10px;
+}
+.imageContainer img {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+}
+
+.blokDescription {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.blokDescription h3 span {
+    color: rgb(186, 3, 104);
+}
+
+.displaybtn {
+    font-family:"Dancing Script";
+    width: 20%;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #4C91A1;
+    color: white;
+    font-size: 1.3rem;
+}
+/* Animation */
+  
+
+@media screen and (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sousNav {
     padding: 16px 0;
     display: flex;
     justify-content: center;
@@ -15,3 +118,83 @@
     padding: 0 30px;
 
 }
+
+
+/* past code  */
+
+ /*detail*/
+ /* .detail {
+    margin: 50px 100px;     
+}
+
+.titleContainer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.titleContainer h2 {
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+}
+.dec-blok {
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 100px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.blokDescription { 
+    font-size: 1.2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.blokDescription h3 {
+    padding: 0;
+    margin: 0;
+}
+ 
+.containerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid black;
+}
+ 
+.blokDescription span {
+    color: blue;
+}
+.containerImg  img {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .detail {
+        background-color: red;
+        margin: 20px 10px;
+    }
+
+    /*
+    .containerImg img {
+         height: 100px;
+        width: 200px; 
+    }
+    
+    
+} 
+*/

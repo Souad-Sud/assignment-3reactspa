@@ -1,12 +1,11 @@
-import React, { useState } from "react"
 import styles from "./countryList.module.css"
 
-const CountryList = ({country, onClick}) => {
+const CountryList = ({country, onClick, }) => {
 
     return(    
         <>
             <li className={styles.navItemsContainer}
-            onClick={() => onClick(country)}>
+            onClick={() => onClick()}>
             {country}                                       
             </li>               
         </>

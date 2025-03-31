@@ -1,6 +1,6 @@
 import styles from './home.module.css'
 
-const Home = ({setHomePage}) => {
+const Home = ({onNavigation}) => {
     return(   
         <div className={styles.mainContent}>
             <div className={styles.content}>
@@ -11,7 +11,7 @@ const Home = ({setHomePage}) => {
                     ex quisquam, in optio, debitis consequuntur perspiciatis quibusdam cum voluptatum, totam veritatis qui 
                     .Laudantium, consectetur?
                     </p>
-                <button className={styles.btn}>Discover more</button> 
+                <button className={styles.btn} onClick={onNavigation}>Discover more</button> 
             </div>
         </div>
     )

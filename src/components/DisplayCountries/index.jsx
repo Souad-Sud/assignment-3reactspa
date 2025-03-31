@@ -3,14 +3,12 @@ import CountryList from "../CountryList";
 import CountryDetail from "../CountryDetail";
 import {  DotsThreeCircle  } from "@phosphor-icons/react";
 import styles from "./DisplayCountries.module.css"
-import { use, useState } from "react";
+import { useState } from "react";
 import Logo from "../Logo"
 
 
 
 const DisplayCountries = () => {
-
-
     const allCountries = [
         ...new Set(AllCities.map((travel) => travel.country)),
     ];
