@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Anton&family=Irish+Grover&family=Lavishly+Yours&family=League+Spartan:wght@100..900&family=Monsieur+La+Doulaise&family=Mystery+Quest&family=Noto+Serif:ital@1&family=Questrial&family=Rochester&family=Style+Script&display=swap');
+.activityContainer {
+    margin: 30px 100px;
+ }
+.activityContent h2 {
+    font-family: "Mystery Quest";
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: normal;
+    
+}
+span {
+    color:rgba(22, 99, 161, 0.862);
+    font-size: 1.2rem;
+    font-family: "Mystery Quest";
+    font-weight: bold;
+}
+.activityContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.imgStyling {
+    padding: 40px 40px 0 0 ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #2d7f92;
+    border-right: 3px solid rgb(189, 197, 200);
+    border-top: 3px solid rgb(189, 197, 200);
+}

@@ -1,6 +1,6 @@
 import styles from "./countryList.module.css"
 
-const CountryList = ({country, onClick, }) => {
+const CountryList = ({country, onClick}) => {
 
     return(    
         <>
