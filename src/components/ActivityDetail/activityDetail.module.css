@@ -1,30 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Anton&family=Irish+Grover&family=Lavishly+Yours&family=League+Spartan:wght@100..900&family=Monsieur+La+Doulaise&family=Mystery+Quest&family=Noto+Serif:ital@1&family=Questrial&family=Rochester&family=Style+Script&display=swap');
-.activityContainer {
-    margin: 30px 100px;
- }
-.activityContent h2 {
-    font-family: "Mystery Quest";
-    font-size: 2rem;
-    font-style: oblique;
-    font-weight: normal;
-    
+
+.activityDetailContainer {
+    margin: 0;
+    padding: 0;
 }
-span {
+
+.activityContainer {
+    margin: 100px auto;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    width: 70%; 
+}
+
+.activityImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.activityImg img{
+   width: 600px;
+   height: 400px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.flexColumn {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.activityDetail {
+    text-align: center;
+    background-color: #F5F2EB;
+    flex: 1;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+ }
+
+ span {
     color:rgba(22, 99, 161, 0.862);
     font-size: 1.2rem;
     font-family: "Mystery Quest";
     font-weight: bold;
 }
-.activityContent {
+
+.activityDetail h3 {
+    padding-top: 20px; 
+}
+
+
+.activityDescroption {
+    background-color: #F5F2EB;
+     align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.activityDescroption p {
+    padding: 5px;
+}
+
+.stars {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-end;
+
 }
-.imgStyling {
-    padding: 40px 40px 0 0 ;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background-color: #2d7f92;
-    border-right: 3px solid rgb(189, 197, 200);
-    border-top: 3px solid rgb(189, 197, 200);
+
+.star{
+    color:  red;
+}
+
+@media screen and (max-width: 768px){
+    .activityContainer {
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .activityImg {
+        width: 100%;
+  height: 300px; /* Fixed height */
+  overflow: hidden;
+
+    }
+
+    .activityImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .stars {
+        display: flex;
+        flex-direction: row;
+    }
 }

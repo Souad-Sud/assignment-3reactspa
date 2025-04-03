@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from './countryDetail.module.css';
 import { getImageUrl } from "../../utils/function.js";
 import { ArrowFatLinesUp } from "@phosphor-icons/react";
-import ActivityDetail from "../ActivityDetail"; // Import the correct component
 
 const CountryDetail = ({ country, cities, onBack, onSelectCity }) => {
     return (
@@ -22,10 +21,10 @@ const CountryDetail = ({ country, cities, onBack, onSelectCity }) => {
                                 <img src={getImageUrl(city.image)} alt={city.city} />
                             </div>
                             <div className={styles.blokDescription}>
-                                <h3><span>Country</span>: {city.country}</h3>
-                                <h3><span>City</span>: {city.city}</h3>
+                                <h3><span>Country</span> : {city.country}</h3>
+                                <h3><span>City</span> : {city.city}</h3>
                                 <p><span>Description</span>: {city.description}</p>
-                                <h3>Year: {city.year}</h3>   
+                                <h3>Year : {city.year}</h3>   
                                 <button className={styles.displaybtn} 
                                     onClick={() => { 
                                     onSelectCity(city);

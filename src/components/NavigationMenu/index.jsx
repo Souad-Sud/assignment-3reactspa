@@ -2,27 +2,27 @@ import { AllCities } from "../../data/data";
 import CountryList from "../CountryList";
 import CountryDetail from "../CountryDetail";
 import {DotsThreeCircle  } from "@phosphor-icons/react";
-import styles from "./DisplayCountries.module.css"
+import styles from "./navigationMenu.module.css"
 import { useState } from "react";
 import Logo from "../Logo"
 import ActivityDetail from "../ActivityDetail";
 
 
 
-const DisplayCountries = () => {
+const NavigationMenu = () => {
     const allCountries = [
         ...new Set(AllCities.map((travel) => travel.country)),
     ];
       
     const [selectedCountry, setSelectedCountry] = useState(null)
     const [selectedCity, setSelectedCity] = useState(null)
+    const [isOpen, setIsOpen] = useState(false)
 
     const filterCities = selectedCountry 
     ? AllCities.filter((travel) => travel.country === selectedCountry):
       [];
 
     //Responsive
-    const [isOpen, setIsOpen] = useState(false)
     return(
             <div className={styles.menuContainer}>
                 <nav className={styles.navbarContainer}> 
@@ -39,7 +39,8 @@ const DisplayCountries = () => {
                             country={country} 
                             onClick={() => {
                                 setSelectedCountry(country);
-                                setSelectedCity(null);  
+                                setSelectedCity(null); 
+                                setIsOpen(false) 
                             }} 
                         />
                     ))}
@@ -66,4 +67,4 @@ const DisplayCountries = () => {
     )
 }
 
-export default DisplayCountries
+export default NavigationMenu

@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Anton&family=Irish+Grover&family=League+Spartan:wght@100..900&family=Monsieur+La+Doulaise&family=Noto+Serif:ital@1&family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Anton&family=Irish+Grover&family=League+Spartan:wght@100..900&family=Monsieur+La+Doulaise&family=Noto+Serif:ital@1&family=Questrial&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Anton&family=Delius&family=Irish+Grover&family=Lavishly+Yours&family=League+Spartan:wght@100..900&family=Monsieur+La+Doulaise&family=Mystery+Quest&family=Noto+Serif:ital@1&family=Questrial&family=Rochester&family=Style+Script&display=swap');
+
 /* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+IE+Guides&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"); */
 
 * {
+
   box-sizing: border-box;
+  margin: 0;
+ 
 }
 
 body {
@@ -14,159 +19,4 @@ body {
    background-color: #E4E4E4;
    margin: 0; 
    padding: 0;
-}
-
-.bgimg{
-   height: 100vh;
-   height: 600px;
-   display: flex;
-   margin: 50px 80px;
-   min-height:100%;
-   background:linear-gradient(0deg, rgba(3, 50, 66, 0.3), rgba(7, 63, 67, 0.71)), 
-   url(./assets/Norway/odda-norway.jpg);
-   color: white;
-   background-size:cover;
-}
-
-.content {
-   padding: 100px;
-}
-
-.content p {
-    font-size: 1.3rem;
-}
-
-h2 {
-   margin: 30px;
-   padding: 70px 0 0 20px;
-   text-transform: uppercase;
- }
-
-/* second page*/
- .blokkkk{
-   width: 250px; 
-   padding: 0;
-   margin: 0;   
-}
-
-.blokkkk img {
-   height: auto;
-   width: 100%;
-   object-fit: contain;
-   overflow: hidden;
-   padding: 0;
-   margin: 0;
-}
- 
-.blokkk {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 10px;
-   margin: 10px;
-   width: 700px;
-   border: 1px solid black;
-}
-
-.desco h2 {
-   margin: 0;
-   padding: 0;
-} 
-
-.btn { 
-   padding: 10px 30px;
-   border: none;
-   background-color: #42697D;
-   color: white;
-   border-radius: 20px;
-   border: 1px solid white;
-}
-
-/*side bar links*/
-.list {
-   padding: 0;
-   margin: 0;
-}
-
-.list-item {
-   list-style: none;
-}
-
-.list-item a {
-   text-decoration: none;
-   font-size: 1.3rem;
-}
-
-.block {
-   padding: 20px;
-   margin: 5px;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   color: black;
-   background-color: #E4E4E4;    
-}
-
-.block div {
-   padding: 2px 0;
-  
-}
-
-/* Ressponsive
-} */
-
-
-
-.navbarContainner {
-   background-color: #2d7f92;
-   justify-content: space-evenly;
-   display: flex;
- }
-
- .navbarContainner li {
-   font-size: 1.5rem;
- }
-
-.navMobile {
-  display: none;
-}
-@media screen and (max-width: 768px){
-   .icons {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-   }
-   .ressss {
-      background-color: green;
-      position: absolute;
-      top: 150px;
-      right: 450px;
-      width: 100%;
-   }
-
-
-   .navbarContainner  {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: yellow;
- 
-   }
-   .navbarContainner li {
-      background-color: blue;
-     
-   }
-    .navMobile {
-    display: block;
-   } 
-
-   .displayNone {
-      display: none;
-   }
-
-
-   
-   
 }

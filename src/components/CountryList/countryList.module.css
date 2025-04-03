@@ -4,5 +4,42 @@
   cursor: pointer;
   text-align: center;
   padding: 0 20px;
+  font-family: "Style Script";
+  letter-spacing: 4px;
 }
 
+
+.navItemsContainer::after {
+  content: '';
+  background-color: rgb(160, 195, 196);
+  height: 1.5px;
+  display: block;
+  width: 0;
+  transition: all .3s;
+  margin-top: 3px;
+ 
+}
+
+.navItemsContainer:hover::after {
+  width: 100%;
+  
+}
+
+.navItemsContainer:hover {
+  color: #FC43B3;
+  text-shadow: 0 0 10px rgba(255, 87, 51, 0.7);
+ 
+}
+
+@media screen and (max-width: 768px){
+  
+.navItemsContainer {
+  width: 20%;
+}
+
+.navItemsContainer:hover::after {
+  width: 40%;
+  text-align: center;
+  
+}
+}
