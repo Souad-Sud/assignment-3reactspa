@@ -41,7 +41,7 @@
 
 .gridItem1 {
     grid-area: a;
-    background-image: url("../../assets/Montpellier.jpg");
+    background-image: url("../../assets/montpellier.jpg");
 }
 
 .gridItem2{
