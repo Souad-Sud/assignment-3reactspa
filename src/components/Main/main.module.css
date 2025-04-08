@@ -35,6 +35,10 @@
     border: none;   
 }
 
+.container div {
+    cursor: pointer;
+}
+
 .gridItem1 {
     grid-area: a;
     background-image: url("../../assets/Montpellier.jpg");
@@ -60,7 +64,7 @@
     background-image: url("../../assets/trollstigen.jpg");
 }
     
-.itms:hover{
+.container div:hover{
     animation: fadeIn 6s infinite alternate;
     /* animation: zoomIn 5s ease-in-out infinite alternate; */     
 }
