@@ -45,3 +45,8 @@ let Germany = [
 const AllCities = [...Sweden, ...Norway, ...France, ...Morocco, ...Germany ]
 
 export{AllCities, Sweden, Norway, France, Morocco, Germany}
+
+export const allCountries = [
+    ...new Set(AllCities.map((travel) => travel.country)),
+];
+

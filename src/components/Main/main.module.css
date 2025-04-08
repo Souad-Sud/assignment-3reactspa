@@ -1,0 +1,91 @@
+.container {
+    margin: 100px 20px;
+    color: white;
+    display: grid;
+    /* grid-template-columns: repeat(4, 100px); here will repeat 4 times the width of 100px*/
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-gap: 20px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-areas:
+        "a b c"
+        "a b c"
+        "d b e"
+        "d b e"
+        "d b e";
+}
+    
+.container div {
+    border: 1px solid white;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;   /* horizontal alignment */
+    align-items: center
+}
+
+.container div button {
+    background-color: rgba(22, 74, 93, 0.608);  
+    font-size: 1.9rem;
+    padding: 20px 0;
+    color: rgb(255, 255, 254);
+    width: 100%; 
+    text-align: center;
+    cursor: pointer;
+    border: none;   
+}
+
+.gridItem1 {
+    grid-area: a;
+    background-image: url("../../assets/Montpellier.jpg");
+}
+
+.gridItem2{
+    grid-area: b;
+    background-image: url("../../assets/odda.jpg");
+}
+
+.gridItem3{
+    grid-area: c;
+    background-image: url("../../assets/berlin.jpg");
+}
+
+.gridItem4{
+    grid-area: d ;
+    background-image: url("../../assets/paris.jpg");
+}
+     
+.gridItem5{
+    grid-area: e;
+    background-image: url("../../assets/trollstigen.jpg");
+}
+    
+.itms:hover{
+    animation: fadeIn 6s infinite alternate;
+    /* animation: zoomIn 5s ease-in-out infinite alternate; */     
+}
+    
+@keyframes fadeIn {
+    10% {opacity: 0.1;}
+    100%{opacity: 1;}
+       
+}
+/* @keyframes zoomIn {
+    from {
+        background-size: 200%;
+        }
+        to {
+          background-size: 120%;
+        }    
+} */
+    
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container div {
+        height: 400px;
+    }
+    
+}

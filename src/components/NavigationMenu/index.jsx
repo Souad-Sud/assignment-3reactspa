@@ -1,4 +1,4 @@
-import { AllCities } from "../../data/data";
+import { AllCities, allCountries } from "../../data/data";
 import CountryList from "../CountryList";
 import CountryDetail from "../CountryDetail";
 import {DotsThreeCircle  } from "@phosphor-icons/react";
@@ -6,13 +6,9 @@ import styles from "./navigationMenu.module.css"
 import { useState } from "react";
 import Logo from "../Logo"
 import ActivityDetail from "../ActivityDetail";
-
-
+import Main from "../Main";
 
 const NavigationMenu = () => {
-    const allCountries = [
-        ...new Set(AllCities.map((travel) => travel.country)),
-    ];
       
     const [selectedCountry, setSelectedCountry] = useState(null)
     const [selectedCity, setSelectedCity] = useState(null)
@@ -22,7 +18,12 @@ const NavigationMenu = () => {
     ? AllCities.filter((travel) => travel.country === selectedCountry):
       [];
 
-    //Responsive
+      const handleSelectCountry = (country) => {
+        setSelectedCountry(country);
+        setSelectedCity(null); // Reset city selection when country is selected
+      };
+
+    
     return(
             <div className={styles.menuContainer}>
                 <nav className={styles.navbarContainer}> 
@@ -44,6 +45,7 @@ const NavigationMenu = () => {
                             }} 
                         />
                     ))}
+
                     </ul>
                 </nav>
                 <div className={styles.displayCities}>
@@ -59,10 +61,14 @@ const NavigationMenu = () => {
                         onBack={() => setSelectedCountry(null)}
                         onSelectCity={setSelectedCity} 
                     />
-                ) : null}
+                ) : (
+                    <Main                        
+                        onSelectedCountry={handleSelectCountry}
+                         countries={allCountries}
+                    />
+                )}
                 </div>
         </div>
-
 
     )
 }
