@@ -94,6 +94,11 @@
         display: flex;
         flex-direction: column;
     }
+    .detail {
+     
+        width: auto;
+        
+    }
     .goBackContainer {
         margin: 0;
     }

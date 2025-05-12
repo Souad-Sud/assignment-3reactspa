@@ -34,6 +34,7 @@ const NavigationMenu = () => {
                         <Logo />
                     </div>
                     <ul className={`${styles.menu} ${isOpen ? styles.open : ""} ${styles.displayCountries}`}>
+                   
                     {allCountries.map((country, index) => (
                         <CountryList 
                             key={index} 
